@@ -4,6 +4,7 @@ import React from "react";
 import Title from "./components/Title";
 import Paragraph from "./components/Paragraph";
 import Button from "./components/Button";
+import Card from "./components/Card";
 
 function App() {
   function onClickFunction() {
@@ -17,6 +18,10 @@ function App() {
         <Title text="my Title" />
         <Paragraph text="my Paragraph" />
         <Button onClick={onClickFunction} text="my Button" />
+        <Card 
+        title="Card Title"
+        body="Here comes the card text!"
+        />
         <h1>Change</h1>
       </header>
     </div>
