@@ -7,8 +7,13 @@ import Button from "./components/Button";
 import Card from "./components/Card";
 
 function App() {
-  function onClickFunction() {
-    alert("You clicked on me!");
+
+  function onClickFirstButton() {
+    alert("You clicked the first button!");
+  }
+
+  function onClickSecondButton() {
+    alert("You clicked the second button!");
   }
 
   return (
@@ -17,9 +22,10 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <Title text="my Title" />
         <Paragraph text="my Paragraph" />
-        <Button onClick={onClickFunction} text="my Button" />
+        {/* <Button onClick={onClickFunction} text="my Button" /> */}
         <Card
-          onClick={onClickFunction}
+          firstButtonOnClick={onClickFirstButton}
+          secondButtonOnClick={onClickSecondButton}
           title="Card Title"
           firstParagraph="Here comes the first card text!"
           secondParagraph="Here comes the second card text!"
