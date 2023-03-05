@@ -18,7 +18,14 @@ function App() {
         <Title text="my Title" />
         <Paragraph text="my Paragraph" />
         <Button onClick={onClickFunction} text="my Button" />
-        <Card onClick={onClickFunction} title="Card Title" body="Here comes the card text!" buttonText="It's the button text!"/>
+        <Card
+          onClick={onClickFunction}
+          title="Card Title"
+          firstParagraph="Here comes the first card text!"
+          secondParagraph="Here comes the second card text!"
+          firstButton="Cancelar"
+          secondButton="Aplicar"
+        />
       </header>
     </div>
   );

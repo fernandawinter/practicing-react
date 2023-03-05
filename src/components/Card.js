@@ -4,13 +4,15 @@ import Title from "./Title";
 import Paragraph from "./Paragraph";
 import Button from "./Button";
 
-const Card = ({ buttonOnClick, title, body, buttonText }) => {
+const Card = ({ buttonOnClick, title, firstParagraph, secondParagraph, firstButton, secondButton }) => {
   return (
     <div className="card-container">
       <div className="card-content">
         <Title text={title}/>
-        <Paragraph text={body}/>
-        <Button onClick={buttonOnClick} text={buttonText}/>
+        <Paragraph text={firstParagraph}/>
+        <Paragraph text={secondParagraph}/>
+        <Button onClick={buttonOnClick} text={firstButton}/>
+        <Button onClick={buttonOnClick} text={secondButton}/>
       </div>
     </div>
   );
